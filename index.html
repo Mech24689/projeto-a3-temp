@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <title>Document</title>
+    </head>
+    <body>
+    <img src="img/background-sobre-nos.jpg" id="background-sobre-nos" alt="">
+    <!-- navbar do site -->
+    <nav id="navbar">
+        <ul>
+            <a href="#section1"><li>home</li></a>
+            <a href="#section2"><li>sobre nós</li></a>
+            <a href="#section3"><li>ferramentas</li></a>
+            <a href="/"><li>contatos</li></a>
+        </ul>
+        <div>
+            <button class="comum btn-type">consulta</button>
+            <button class="sair btn-type">sair</button>
+            <button class="premium btn-type">premium</button>
+        </div>
+    </nav>
+    
+    <section id="section1">
+        <img id="logo" src="img/logo.jpeg" alt="">
+        <div id="area-title">
+            <h1 id="title-section1"></h1>
+        </div>
+    </section>
+    
+    <section id="section2">
+        <h1 id="title-section2">Saiba mais sobre a nossa empresa</h1>
+        
+        <div id="areaPitch">
+            <video controls>
+                <source src="video/MindBoost(360P).mp4" type="video/mp4">
+            </video>
+            <h1>Uma apresentação rápida sobre a nossa empresa.</h1>
+        </div>
+        
+        <div id="areaPodcast">
+            <h1>Escute o nosso podcast completo.</h1>
+            <div id="areaMusic">
+                <button class="btn-music" id="play">play</button>
+                <button class="btn-music" id="pause">pause</button>
+                <p id="temporizador">00:00</p>
+                <input class="btn-music" type="range" name="" id="tempoMusic" value="0">
+                <p id="temporizador-final">00:00</p>
+                <button class="btn-music" id="restart">restart</button>
+            </div>
+        </div>
+
+            <a href="doc/Documento - MindBoost.pdf" id="doc" download>documento sobre a empresa em PDF 📥</a>
+    </section>
+
+    <section id="section3">
+        <div id="areaTitle-section3">
+            <h1 id="titleFerramentas">Ferramentas</h1>
+        </div>
+        <div id="areaFerramentas">
+            <a href="TelaDiario.html" class="ferramenta">
+                <img src="img/caderno.png" alt="">
+                <h1>Diario</h1>
+            </a>
+            <a href="telaMusic.html" class="ferramenta">
+                <img src="img/fones-de-ouvido.png" alt="">
+                <h1>imersão zen</h1>
+            </a>
+        </div>
+    </section>
+
+    <script src="js/toggle-premium.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/podcast.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(45deg, #8C8FCB, #6b6ea7, #6a6fcc);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* estilizando botão voltar */
+#voltar{
+    top: 15px;
+    left: 15px;
+    position: absolute;
+    height: 8%;
+    width: 8%;
+    font-size: 120%;
+    background-color: #222;
+    opacity: 50%;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+#voltar:hover{
+    opacity: 100%;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* estilizando a area de texto */
+#areaText{
+    resize: none;
+    background-color: rgba(221, 221, 221, 0.418);
+    height: 75%;
+    width: 50%;
+    padding: 20px;
+    font-size: 100%;
+    text-transform: uppercase;
+    border: none;
+    font-family: 'Varela Round', sans-serif;
+    box-shadow: 0 0 20px 20px rgba(221, 221, 221, 0.418);
+    transition: 500ms;
+    cursor: auto;
+}
+
+#areaText:focus{
+    outline: 0;
+}
+
+#areaText::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#areaText::-webkit-scrollbar-track{
+    background: #ffffff52;
+}
+
+#areaText::-webkit-scrollbar-thumb{
+    background-color: rgba(240, 204, 0, 0.63);
+    border-radius: 20px;
+}
+
+/* estilizando o titulo */
+#title{
+    font-size: 200%;
+}
+
+/* estilizando botão salvar */
+#salvar{
+    text-transform: uppercase;
+    font-size: 100%;
+    height: 9%;
+    width: 15%;
+    background-color: #222;
+    color: white;
+    border: none;
+    transition: 500ms;
+}
+
+#salvar:hover{
+    background-color: #111;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+                                            /* responsividade */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body{
+        height: 93vh;
+    }
+
+    #voltar{
+        width: 20%;
+        height: 6%;
+    }
+
+    #title{
+        font-size: 170%;
+    }
+
+    #areaText{
+        width: 72%;
+        height: 65%;
+    }
+
+    #salvar{
+        height: 6%;
+        width: 20%;
+    }
+}

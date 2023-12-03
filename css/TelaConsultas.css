@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Varela Round', sans-serif;
+    background-image: teal;
+}
+
+#background{
+    z-index: -10;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+/* estilizando o navbar */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 27%;
+    padding-left: 5%;
+    background-color: rgba(128, 128, 128, 0.664);
+    height: 70px;
+}
+
+nav .btn-voltar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 8%;
+    font-size: 120%;
+    background-color: #222;
+    opacity: 50%;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+nav .btn-voltar:hover{
+    opacity: 100%;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+nav h1{
+    font-size: 200%;
+    text-transform: uppercase;
+    color: #111;
+}
+
+/* estilizando o input de filtro */
+
+#filter{
+    margin-top: 2%;
+    background-color:rgba(141, 141, 141, 0.438);
+    margin-left: 25%;
+    width: 60%;
+    height: 8%;
+    font-size: 170%;
+    padding-left: 5%;
+    text-align: center;
+    outline: 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 500ms;
+    color: white;
+}
+
+
+#filter::placeholder{
+    color: rgb(206, 206, 206);
+}
+
+#filter:hover{
+    background-color:rgba(83, 83, 83, 0.438);
+    cursor: pointer;
+}
+
+#filter:focus{
+    background-color:rgba(83, 83, 83, 0.438);
+}
+
+/* estilizando os cards */
+
+#areaConsultas{
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 8%;
+    width: 85%;
+    padding-top: 5%;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    margin-left: 7%;
+    width: 40%;
+    height: 20%;
+    border-radius: 10px;
+    background-color: #55555581;
+    margin-bottom: 5%;
+    transition: 500ms;
+}
+
+.cards:hover{
+    transform: scale(1.1);
+    background-color: #555555cb;
+    cursor: pointer;
+}
+
+.cards img{
+    width: 50%;
+}
+
+.cards p{
+    font-size: 120%;
+    margin-top: 2%;
+}
+
+                                            /* responsividade */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #background{
+        height: 100vh;
+    }
+
+    nav .btn-voltar{
+        width: 20%;
+    }
+
+    nav{
+        gap: 8%;
+    }
+
+    nav h1{
+        font-size: 120%;
+    }
+
+    #filter{
+        width: 80%;
+        margin-left: 10%;
+        font-size: 150%;
+    }
+
+    .cards{
+        width: 95%;
+        margin-left: 3%;
+    }
+}

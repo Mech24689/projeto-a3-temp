@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #222;
+}
+
+#background-sobre-nos{
+    width: 100%;
+    position: fixed;
+    z-index: -10;
+}
+
+/*estilizando o navbar*/
+#navbar{
+    z-index: 10;
+    background-color: rgba(128, 128, 128, 0.664);
+    position: fixed;
+    height: 12%;
+    width: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+#navbar ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navbar ul a{
+    cursor: pointer;
+    background-color: rgb(47, 182, 223);
+    height: 65%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 10px 2px #111;
+    text-decoration: none;
+    color: #111;
+}
+
+#navbar ul a:hover{
+    background-color: rgb(69, 205, 247);
+}
+
+#navbar ul li{
+    text-decoration: none;
+    list-style: none;
+    transition: 500ms;
+}
+
+
+
+#navbar div{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.btn-type{
+    height: 65%;
+    width: 20%;
+    font-size: 1.3em;
+    background-color: yellow;
+    text-transform: uppercase;
+    transition: 500ms;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px 2px #111;
+}
+
+
+.premium{
+    position: absolute;
+    background-color: yellow;
+    height: 65%;
+    width: 20%;
+}
+.premium:hover{
+    transform: scale(1.2);
+}
+
+.comum{
+    background-color: gray;
+    height: 100%;
+    width: 50%;
+}
+
+.comum:hover{
+    background-color: rgb(87, 87, 87);
+}
+
+.sair{
+    background-color: #222;
+    height: 90%;
+    width: 30%;
+    color: wheat;
+}
+
+.sair:hover{
+    background-color: #363636;
+}
+
+.hide{
+    display: none;
+}
+
+/* estilizando a section 1 */
+
+#section1{
+    background-color: #86B6FF;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo{
+    background-color: #111;
+    width: 40%;
+}
+
+#area-title{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 250%;
+    text-transform: uppercase;
+}
+
+#title-section1{
+    text-align:center;
+    color: #fff;
+    opacity: 80%;
+    text-shadow: 2px 2px 5px #111;
+    transition: 500ms;
+}
+
+/*estilizando a section 2*/
+
+#section2{
+    padding-top: 50px;
+    height: 150vh;
+    /* background-image: linear-gradient(#F1F1F1,#6AD0FA, #3DC4FD); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: white;
+}
+
+#title-section2{
+    font-size: 250%;
+    background-color: rgba(128, 128, 128, 0.678);
+    box-shadow: 3px 3px 10px 2px #111;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: black;
+}
+            /*area music*/
+#areaPitch{
+    transition: 500ms;
+    height: 60%;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 40% 40%;
+}
+
+#areaPitch:hover{
+    background-color: rgba(170, 170, 170, 0.596);
+}
+
+#areaPitch h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 250%;
+    text-shadow: 2px 2px 10px #111;
+}
+
+#areaPitch video{
+    width: 100%;
+}
+
+            /*area podcast*/
+#areaPodcast{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    transition: 500ms;
+}
+
+#areaPodcast:hover{
+    background-color: rgba(170, 170, 170, 0.596);
+}
+
+#areaPodcast h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 250%;
+    text-shadow: 2px 2px 10px #111;
+}
+
+#areaMusic{
+    height: 40%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#tempoMusic{
+    width: 45%;
+}
+
+.btn-music{
+    height: 70%;
+    width: 13%;
+    font-size: 120%;
+    border-radius: 10px;
+    border: none;
+    background-color: #222;
+    opacity: 70%;
+    color: white;
+    transition: 500ms;
+}
+
+.btn-music:hover{
+    opacity: 100;
+    cursor: pointer;
+}
+
+
+#doc{
+    background-color: rgba(128, 128, 128, 0.603);
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    height: 5%;
+    padding: 20px 20px;
+    text-align: center;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120%;
+    text-transform: uppercase;
+    color: #111;
+    text-shadow: 2px 2px 10px #111;
+    transition: 500ms;
+}
+
+#doc:hover{
+    transform: scale(1.1);
+    background-color: gray;
+    color: black;
+}
+
+/* Estilizando a section 3 */
+
+#section3{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    background-image: linear-gradient(45deg, #111, #777);
+}
+
+#areaTitle-section3{
+    text-shadow: 1px 1px 6px #111;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 170%;
+    text-transform: uppercase;
+}
+
+#areaFerramentas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+    width: 75%;
+}
+
+
+.ferramenta{
+    width: 25%;
+    height: 76%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 140%;
+    transition: 500ms;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.ferramenta:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+.ferramenta img{
+    width: 75%;
+}
