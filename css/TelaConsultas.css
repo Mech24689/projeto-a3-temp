@@ -7,7 +7,8 @@
 body{
     height: 100vh;
     font-family: 'Varela Round', sans-serif;
-    background-image: teal;
+    /* background-image: teal; */
+    background-color: #85B5FE;
 }
 
 #background{
